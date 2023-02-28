@@ -10,13 +10,11 @@ class Popup  {
     }
     open() {
         this._popupElement.classList.add(`popup_active`);
-        document.addEventListener('keyup', this.#handleEscUp);
-        
+        document.addEventListener('keyup', this.#handleEscUp);    
     }
     close(){
         this._popupElement.classList.remove(`popup_active`);
-        document.removeEventListener('keyup', this.#handleEscUp);
-        
+        document.removeEventListener('keyup', this.#handleEscUp);    
     }
     setEventListener() {
         this._popupElement.addEventListener('mousedown', evt => {

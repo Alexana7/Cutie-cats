@@ -13,7 +13,6 @@ class Card {
         this.#selectorTemplate = selectorTemplate;
         this.#handleClickCatImage = handleClickCatImage;
     }
-
     getElement(){
         this.#element = this.#getTemplate().cloneNode(true); //наполняет карточку
         const cardTitleElement = this.#element.querySelector('.card__name');
@@ -23,7 +22,6 @@ class Card {
         cardTitleElement.textContent = this.#data.name;
         cardImageElement.src = this.#data.image;
 
-        
         // удаляет like, усли favorite: false
         if(!this.#data.favorite) {
             cardLikeElement.remove()

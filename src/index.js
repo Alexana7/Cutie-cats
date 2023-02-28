@@ -14,7 +14,6 @@ function serializeForm(elements) {
         if(input.type === 'submit' || input.type === 'button' ) {return}
         if(input.type === 'checkbox') {
             formData[input.name] = input.checked;
-            console.log(input.checked)
         }
         if(input.type !== 'checkbox') {
             formData[input.name] = input.value;
@@ -56,13 +55,6 @@ cats.forEach(catData => {
 })
 popupAdd.setEventListener();
 popupImage.setEventListener();
-
-
-
-// const template = document.querySelector('#card-template');
-// const newCatElement = template.content.querySelector('.card');
-// cardsContainer.append(newCatElement) // методы append/prepend добавляют только 1 элемент
-// cardsContainer.append(newCatElement.cloneNode(true)) //клонируем ноду и добавляем на страницу несколько элементов. Аргумент 'true' позволяет скопировать не только верхний уровень, но и все дочерние элементы
 
 
 
