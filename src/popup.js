@@ -1,5 +1,5 @@
 
-class Popup  {
+export class Popup  {
     #handleEscUp = (evt) => {
         if(evt.key === 'Escape') {
             this.close();
