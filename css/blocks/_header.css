@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 .logo {
@@ -24,11 +25,11 @@
 .btn {
     padding: 10px 16px;
     border-radius: 10px;
+    
     border: none;
     background-color: #b9c2d0;
 }
 
 .btn:hover, .btn:focus {
     background-color: #b9c2d07a;
-
 }
